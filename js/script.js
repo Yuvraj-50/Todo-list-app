@@ -172,7 +172,11 @@ deleteCompleted.addEventListener("click", function () {
     return arr.indexOf(elem) === -1;
   });
 
-  showAlert("success", "All completed Delted");
+  if (todoList.length === newTodoList.length) {
+    showAlert("alert", "Nothing is completed");
+  } else {
+    showAlert("success", "All completed Delted");
+  }
   localStorage.setItem("todo-list", JSON.stringify(newTodoList));
   showTodo();
 });
