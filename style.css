@@ -1,0 +1,96 @@
+body {
+  background-color: #3450a1;
+}
+
+.todo__list-item {
+  background-color: #041955;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.todo-list-label {
+  cursor: pointer;
+}
+
+.delete,
+.edit {
+  cursor: pointer;
+}
+
+.delete {
+  margin: 0 1rem;
+}
+.alert-con {
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  top: 0%;
+  display: flex;
+  justify-content: end;
+  margin: 1rem auto;
+}
+
+.alert {
+  padding: 0.4rem;
+}
+
+.alert-success {
+  background-color: rgb(111, 167, 111);
+}
+
+.alert-alert {
+  background-color: rgb(255, 93, 93);
+}
+
+.completed {
+  opacity: 0.6;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.checkbox {
+  margin-right: 1rem;
+}
+
+.edit-modal {
+  background-color: #041955;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  max-width: 100%;
+  box-shadow: 0 0 10px 0 black;
+}
+
+.update-btn {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-modal {
+  cursor: pointer;
+}
+
+textarea {
+  padding: 0.5rem;
+  color: black;
+}
+
+.delete-all {
+  display: flex;
+  justify-content: end;
+}
+.hidden {
+  display: none;
+}
